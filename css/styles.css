@@ -263,6 +263,55 @@ body {
   background-color: var(--hover-color);
 }
 
+.footer-form {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  width: 570px;
+  margin-left: 78px;
+}
+
+#footer-newsletter {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.14;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.newsletter-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 50px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.input-field {
+  background-color: rgba(47, 48, 58, 1);
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 20px;
+  letter-spacing: 0.03rem;
+}
+
 /* INDEX.HTML STYLING */
 .header-slogan {
   max-width: 100rem;
