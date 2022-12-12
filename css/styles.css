@@ -598,7 +598,6 @@ body {
 
 .modal {
   position: absolute;
-
   top: 50%;
   left: 50%;
   width: 33rem;
@@ -626,12 +625,11 @@ body {
 
 /* MODAL FORM */
 .modal-form-group {
-  width: 100%;
   display: flex;
   row-gap: 10px;
   flex-direction: column;
-  justify-content: center;
 }
+
 #modal-form-paragraph {
   font-weight: 700;
   font-size: 20px;
@@ -689,7 +687,7 @@ body {
 
 .modal-footer-button {
   position: absolute;
-  bottom: 25px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
