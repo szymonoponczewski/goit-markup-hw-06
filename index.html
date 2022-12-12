@@ -400,48 +400,53 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form list-display" role="group" aria-labelledby="footer-newsletter">
-          <p id="footer-newsletter">zapisz się do newslettera</p>
-          <label>
-            <input class="input-field" type="email" name="email" placeholder="E-mail" />
-          </label>
-          <button class="newsletter-button" type="submit">Zapisz się</button>
-        </div>
+        <form>
+          <div class="footer-form" role="group" aria-labelledby="footer-newsletter">
+            <p id="footer-newsletter">zapisz się do newslettera</p>
+            <label>
+              <input class="input-field" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button class="newsletter-button" type="submit">Zapisz się</button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>&#10005;</button>
-       <form class="modal-form">
-        <div class="modal-form-group" role="group" aria-labelledby="service-request">
-          <p id="service-request">Zostaw swoje dane w formularzu poniżej</p>
-          <label>
-            Imię
-            <input type="text" name="username" />
-          </label>
-          <label>
-            Telefon
-            <input type="tel" name="telephone" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Komentarz
-            <textarea name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
-          </label>
-        </div>
 
-        <!-- <form>
-          <div role="group" aria-labelledby="modal-header">
-            <p id="modal-header">Zostaw swoje dane w formularzu poniżej</p>
-            <label>
+        <form class="modal-form">
+          <div class="modal-form-group" role="group" aria-labelledby="service-request">
+            <p id="modal-form-paragraph">Zostaw swoje dane w formularzu poniżej</p>
+            <label class="form-label">
               Imię
-              <input type="text" name="username" />
+              <input class="modal-form-label" type="text" name="username" />
             </label>
+            <label class="form-label">
+              Telefon
+              <input class="modal-form-label" type="tel" name="telephone" />
+            </label>
+            <label class="form-label">
+              Email
+              <input class="modal-form-label" type="email" name="email" />
+            </label>
+            <label class="form-label">
+              Komentarz
+              <textarea
+                class="comment-section"
+                name="comment"
+                rows="9"
+                placeholder="Wprowadź tekst"
+              >
+              </textarea>
+            </label>
+            <p class="modal-form-footer">
+              Oświadczam, iż akceptuję <a class="modal-form-link" href="#">Regulamin</a> i
+              <a class="modal-form-link" href="#">Politykę Prywatności</a>
+            </p>
           </div>
-        </form> -->
+          <button class="modal-footer-button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
