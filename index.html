@@ -412,6 +412,36 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>&#10005;</button>
+       <form class="modal-form">
+        <div class="modal-form-group" role="group" aria-labelledby="service-request">
+          <p id="service-request">Zostaw swoje dane w formularzu poniżej</p>
+          <label>
+            Imię
+            <input type="text" name="username" />
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="telephone" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Komentarz
+            <textarea name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+          </label>
+        </div>
+
+        <!-- <form>
+          <div role="group" aria-labelledby="modal-header">
+            <p id="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+            <label>
+              Imię
+              <input type="text" name="username" />
+            </label>
+          </div>
+        </form> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>

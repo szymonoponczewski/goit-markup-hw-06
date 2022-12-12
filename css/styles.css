@@ -304,6 +304,7 @@ body {
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .input-field::placeholder {
@@ -618,6 +619,12 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* MODAL FORM */
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* PORTFOLIO.HTML STYLING */
