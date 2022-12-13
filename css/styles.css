@@ -633,6 +633,7 @@ body {
 
 /* MODAL FORM */
 .modal-form-group {
+  position: relative;
   display: flex;
   row-gap: 10px;
   flex-direction: column;
@@ -650,6 +651,7 @@ body {
 
 .form-label {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   row-gap: 4px;
@@ -659,19 +661,27 @@ body {
   color: #757575;
 }
 
-.modal-form-label {
+.modal-form-input {
   width: 448px;
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .modal-form-footer {
+  position: relative;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
+}
+
+.policy-input {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .modal-form-link {
@@ -709,6 +719,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+}
+.modal-icon {
+  position: absolute;
+  left: 14px;
+  top: 29px;
+  fill: #212121;
 }
 
 /* PORTFOLIO.HTML STYLING */
