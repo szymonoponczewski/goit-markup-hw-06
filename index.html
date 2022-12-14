@@ -453,14 +453,14 @@
               >
               </textarea>
             </label>
-            <p class="modal-form-footer">
-              Oświadczam, iż akceptuję <a class="modal-form-link" href="#">Regulamin</a> i
-              <a class="modal-form-link" href="#">Politykę Prywatności</a>
-              <label>
-                <input class="policy-input" type="checkbox" name="policy" required />
-                <span class="custom-checkmark"></span>
+            <div class="modal-form-footer" role="group" aria-labelledby="policy-input">
+              <input id="policy-input" type="checkbox" name="policy" required />
+              <label for="policy-input">
+                <span class="custom-checkmark"></span> Oświadczam, iż akceptuję
+                <a class="modal-form-link" href="#">Regulamin</a> i
+                <a class="modal-form-link" href="#">Politykę Prywatności.</a>
               </label>
-            </p>
+            </div>
           </div>
           <button class="modal-footer-button" type="submit">Wyślij</button>
         </form>

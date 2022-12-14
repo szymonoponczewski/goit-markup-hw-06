@@ -678,10 +678,32 @@ body {
   color: rgba(117, 117, 117, 1);
 }
 
-.policy-input {
+#policy-input {
+  display: none;
+}
+
+.custom-checkmark:before,
+.custom-checkmark:after {
+  content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  bottom: 0;
+  left: -15px;
+  width: 16px;
+  height: 15px;
+  margin: auto;
+}
+
+.custom-checkmark:hover {
+  cursor: pointer;
+}
+
+.custom-checkmark::before {
+  background-image: url('./images/icons.svg#icon-checkbox') 0 0 16px 15px no-repeat;
+  fill: black;
+}
+
+.custom-checkmark::after {
 }
 
 .modal-form-link {
