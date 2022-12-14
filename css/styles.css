@@ -671,7 +671,9 @@ body {
 
 .modal-form-footer {
   position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -679,19 +681,18 @@ body {
 }
 
 #policy-input {
-  display: none;
+  position: absolute;
+  opacity: 0.4;
+  left: 0;
 }
 
 .custom-checkmark:before,
 .custom-checkmark:after {
   content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -15px;
+  display: inline-block;
   width: 16px;
   height: 15px;
-  margin: auto;
+  margin-right: 7px;
 }
 
 .custom-checkmark:hover {
@@ -699,11 +700,12 @@ body {
 }
 
 .custom-checkmark::before {
-  background-image: url('./images/icons.svg#icon-checkbox') 0 0 16px 15px no-repeat;
-  fill: black;
+  border: 2px solid black;
+  border-radius: 1px;
 }
 
 .custom-checkmark::after {
+  display: none;
 }
 
 .modal-form-link {
