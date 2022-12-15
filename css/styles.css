@@ -268,9 +268,8 @@ body {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-
-  width: 570px;
-  margin-left: 78px;
+  width: 35.63rem;
+  margin-left: 4.5rem;
 }
 
 #footer-newsletter {
@@ -280,26 +279,33 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
-  margin-top: 12px;
-  margin-bottom: 20px;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .newsletter-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 24px;
+  column-gap: 1.5rem;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.13rem;
   color: rgba(255, 255, 255, 1);
+  transform: background-color;
+  transition: background-color 200ms ease-in;
   background-color: rgba(33, 150, 243, 1);
   border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.25;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: rgba(0, 124, 214, 1);
 }
 
 .newsletter-icon {
@@ -308,18 +314,22 @@ body {
 
 .input-field {
   background-color: rgba(47, 48, 58, 1);
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  width: 22.38rem;
+  height: 3.13rem;
+  padding-left: 1rem;
+  border: 0.06rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
   color: rgba(255, 255, 255, 1);
 }
 
 .input-field::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0.03rem;
+}
+
+.input-field:focus {
+  border: 0.06rem solid var(--hover-color);
 }
 
 /* INDEX.HTML STYLING */
@@ -358,9 +368,16 @@ body {
   margin-bottom: 6.63rem;
   margin-left: 31.2rem;
   border: none;
+  transform: background-color;
+  transition: background-color 200ms ease-in;
   box-shadow: 0rem 0.24rem 0.25rem rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   cursor: pointer;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: rgba(0, 124, 214, 1);
 }
 
 .main-description {
@@ -598,7 +615,8 @@ body {
   transition-duration: 250ms;
 }
 
-.close-button:hover {
+.close-button:hover,
+.close-button:focus {
   background-color: rgba(0, 0, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -610,7 +628,7 @@ body {
   left: 50%;
   width: 33rem;
   height: 36.31rem;
-  padding: 40px;
+  padding: 2.5rem;
   background-color: rgb(255, 255, 255);
   transition-property: transform;
   transform: translate(-50%, -50%);
@@ -618,35 +636,34 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: scale(1.5);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.5);
 }
 
 /* MODAL FORM */
 .modal-form-group {
   position: relative;
   display: flex;
-  row-gap: 10px;
+  row-gap: 0.63rem;
   flex-direction: column;
 }
 
 #modal-form-paragraph {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25rem;
+  line-height: 1.44rem;
   text-align: center;
   letter-spacing: 0.03rem;
-  margin-bottom: 8px;
-  color: #212121;
+  margin-bottom: 0.5rem;
+  color: rgb(33, 33, 33);
 }
 
 .form-label {
@@ -654,19 +671,23 @@ body {
   position: relative;
   flex-direction: column;
   justify-content: center;
-  row-gap: 4px;
-  font-size: 12px;
-  line-height: 14px;
+  row-gap: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
   letter-spacing: 0.01rem;
-  color: #757575;
+  color: rgb(117, 117, 117);
+}
+
+.modal-form-input:focus + .modal-icon {
+  fill: var(--hover-color);
 }
 
 .modal-form-input {
-  width: 448px;
-  height: 40px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  width: 28rem;
+  height: 2.5rem;
+  padding-left: 2.63rem;
+  border: 0.06rem solid rgba(33, 33, 33, 0.2);
+  border-radius: 0.25rem;
 }
 
 .modal-form-footer {
@@ -674,9 +695,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: 0.88rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
   color: rgba(117, 117, 117, 1);
 }
 
@@ -715,40 +736,64 @@ body {
 
 .comment-section {
   resize: none;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border: 0.06rem solid rgba(33, 33, 33, 0.2);
+  border-radius: 0.25rem;
+}
+
+.comment-section,
+.modal-form-input,
+.input-field {
+  outline: none;
+  transform: border;
+  transition: border 200ms ease-in;
+}
+
+.comment-section:focus,
+.modal-form-input:focus {
+  border: 0.06rem solid var(--hover-color);
 }
 
 .comment-section::placeholder {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
   letter-spacing: 0.01rem;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-footer-button {
   position: absolute;
-  bottom: 40px;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.13rem;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 3.13rem;
   text-align: center;
   letter-spacing: 0.06rem;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: rgb(255, 255, 255);
+  background: rgb(33, 150, 243);
+  transform: background-color;
+  transition: background-color 200ms ease-in;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
+
+.modal-footer-button:hover,
+.modal-footer-button:focus {
+  background-color: rgba(0, 124, 214, 1);
+  cursor: pointer;
+}
+
 .modal-icon {
   position: absolute;
-  left: 14px;
-  top: 29px;
-  fill: #212121;
+  left: 0.88rem;
+  top: 1.81rem;
+  fill: rgb(33, 33, 33);
+  transform: fill;
+  transition: fill 200ms ease-in;
 }
 
 /* PORTFOLIO.HTML STYLING */
