@@ -453,11 +453,18 @@
               >
               </textarea>
             </label>
+
             <div class="modal-form-footer" role="group" aria-labelledby="policy-input">
-              <input id="policy-input" type="checkbox" name="policy" required />
-              <label for="policy-input">
-                <span class="custom-checkmark"></span> Oświadczam, iż akceptuję
-                <a class="modal-form-link" href="#">Regulamin</a> i
+              <label class="policy-label">
+                <input class="policy-input" type="checkbox" name="policy" required />
+                <svg class="checkbox-unchecked" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <svg class="checkbox-checked" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                Oświadczam, iż akceptuję&nbsp
+                <a class="modal-form-link" href="#">Regulamin</a>&nbspi&nbsp
                 <a class="modal-form-link" href="#">Politykę Prywatności.</a>
               </label>
             </div>
