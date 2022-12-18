@@ -404,7 +404,7 @@
           <div class="footer-form" role="group" aria-labelledby="footer-newsletter">
             <p id="footer-newsletter">zapisz się do newslettera</p>
             <label>
-              <input class="input-field" type="email" name="email" placeholder="E-mail" />
+              <input class="input-field" type="email" name="email" placeholder="E-mail" required />
             </label>
             <button class="newsletter-button" type="submit">
               Zapisz się
@@ -421,7 +421,7 @@
         <button class="close-button" type="button" data-modal-close>&#10005;</button>
         <form class="modal-form">
           <div class="modal-form-group" role="group" aria-labelledby="service-request">
-            <p id="modal-form-paragraph">Zostaw swoje dane w formularzu poniżej</p>
+            <p id="service-request">Zostaw swoje dane w formularzu poniżej</p>
             <label class="form-label">
               Imię
               <input class="modal-form-input" type="text" name="username" />
@@ -450,11 +450,10 @@
                 name="comment"
                 rows="7"
                 placeholder="Wprowadź tekst"
-              >
-              </textarea>
+              ></textarea>
             </label>
 
-            <div class="modal-form-footer" role="group" aria-labelledby="policy-input">
+            <div class="modal-form-footer" role="group">
               <label class="policy-label">
                 <input class="policy-input" type="checkbox" name="policy" required />
                 <svg class="checkbox-unchecked" width="16" height="16">
@@ -463,8 +462,8 @@
                 <svg class="checkbox-checked" width="16" height="16">
                   <use href="./images/icons.svg#icon-checked"></use>
                 </svg>
-                Oświadczam, iż akceptuję&nbsp
-                <a class="modal-form-link" href="#">Regulamin</a>&nbspi&nbsp
+                Oświadczam, iż akceptuję&nbsp;
+                <a class="modal-form-link" href="#">Regulamin</a>&nbsp;i&nbsp;
                 <a class="modal-form-link" href="#">Politykę Prywatności.</a>
               </label>
             </div>
