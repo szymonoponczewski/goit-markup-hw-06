@@ -715,7 +715,7 @@ body {
   cursor: pointer;
 }
 
-/*CREATE CUSTOM CHECKBOX */
+/* CREATE CUSTOM CHECKBOX */
 .checkbox-unchecked,
 .checkbox-checked {
   margin-right: 0.44rem;
